@@ -1,199 +1,49 @@
 <!doctype html>
 <html lang="vi" data-lang="vi">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#20232d">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#232631">
   <meta name="description" content="Portfolio của Nguyễn Văn Ngọc Quý — Junior Security Engineer tập trung vào SOC, DFIR, malware analysis và detection engineering.">
-  <meta property="og:title" content="Nguyễn Văn Ngọc Quý — Security Engineering">
-  <meta property="og:description" content="Security engineering portfolio and research notes across SOC, DFIR, malware analysis, and detection automation.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://q11n9.github.io/">
+  <meta property="og:title" content="Nguyễn Văn Ngọc Quý — Security Engineering"><meta property="og:type" content="website"><meta property="og:url" content="https://q11n9.github.io/">
   <title>Nguyễn Văn Ngọc Quý — Security Engineering</title>
-  <link rel="canonical" href="https://q11n9.github.io/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Nguyen Van Ngoc Quy",
-      "url": "https://q11n9.github.io/",
-      "sameAs": ["https://github.com/q11N9"],
-      "jobTitle": "Junior Security Engineer",
-      "alumniOf": {"@type": "CollegeOrUniversity", "name": "Academy of Cryptography Techniques"},
-      "knowsAbout": ["Security Operations", "Digital Forensics", "Incident Response", "Malware Analysis", "Detection Engineering"]
-    }
-  </script>
+  <link rel="canonical" href="https://q11n9.github.io/"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="home">
   <a class="skip-link" href="#main" data-i18n="skip">Bỏ qua điều hướng</a>
-
   <header class="topbar">
-    <a class="site-title" href="#top">q11N9<span>/</span>security-notes</a>
-    <nav class="nav" aria-label="Điều hướng chính" data-i18n-aria="navLabel">
-      <a href="#about" data-i18n="navAbout">Giới thiệu</a>
-      <a href="#projects" data-i18n="navProjects">Dự án</a>
-      <a href="#research" data-i18n="navResearch">Nghiên cứu</a>
-      <a href="#experience" data-i18n="navExperience">Kinh nghiệm</a>
-      <button class="language-toggle" type="button" aria-label="Switch to English" aria-pressed="false">
-        <span>VI</span><i aria-hidden="true">/</i><span>EN</span>
-      </button>
+    <a class="site-title" href="index.html">q11N9<span>/</span>security-notes</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span><b data-i18n="menu">Menu</b></button>
+    <nav class="nav" id="site-nav" aria-label="Điều hướng chính" data-i18n-aria="navLabel">
+      <a class="active" href="index.html" aria-current="page" data-i18n="navHome">Trang chủ</a>
+      <a href="about.html" data-i18n="navAbout">Giới thiệu</a><a href="projects.html" data-i18n="navProjects">Dự án</a><a href="research.html" data-i18n="navResearch">Nghiên cứu</a><a href="contact.html" data-i18n="navContact">Liên hệ</a>
+      <button class="language-toggle" type="button" aria-label="Switch to English" aria-pressed="false"><span>VI</span><i>/</i><span>EN</span></button>
     </nav>
   </header>
-
-  <div class="page-shell" id="top">
+  <div class="page-shell">
     <aside class="profile" aria-label="Tóm tắt hồ sơ" data-i18n-aria="profileLabel">
-      <div class="avatar" aria-label="Ảnh đại diện tạm thời" data-i18n-aria="avatarLabel">
-        <div class="avatar-grid" aria-hidden="true"></div>
-        <strong aria-hidden="true">NQ</strong>
-      </div>
-
-      <h1>Nguyễn Văn Ngọc Quý</h1>
-      <p class="handle">@q11N9</p>
+      <div class="avatar"><div class="avatar-grid"></div><strong>NQ</strong></div><h1>Nguyễn Văn Ngọc Quý</h1><p class="handle">@q11N9</p>
       <p class="profile-lead" data-i18n="profileLead">Junior Security Engineer. Ở giữa tín hiệu, bằng chứng và phản ứng.</p>
-
-      <dl class="profile-facts">
-        <div><dt>ROLE</dt><dd>SOC · DFIR · Detection</dd></div>
-        <div><dt>LOC</dt><dd data-i18n="location">Hà Nội, Việt Nam</dd></div>
-        <div><dt>EDU</dt><dd data-i18n="academyShort">Học viện Kỹ thuật Mật mã</dd></div>
-        <div><dt>GPA</dt><dd>3.19 / 4.0</dd></div>
-      </dl>
-
-      <div class="profile-links">
-        <a href="mailto:quynguyen.attt@gmail.com"><span aria-hidden="true">@</span><span>Email</span></a>
-        <a href="https://github.com/q11N9" target="_blank" rel="noreferrer"><span aria-hidden="true">⌘</span><span>GitHub</span></a>
-        <a href="#projects"><span aria-hidden="true">◆</span><span data-i18n="selectedWork">Dự án chọn lọc</span></a>
-      </div>
-
-      <div class="availability">
-        <i aria-hidden="true"></i>
-        <span data-i18n="availability">Quan tâm các vị trí Security Engineering, SOC và DFIR</span>
-      </div>
+      <dl class="profile-facts"><div><dt>ROLE</dt><dd>SOC · DFIR · Detection</dd></div><div><dt>LOC</dt><dd data-i18n="location">Hà Nội, Việt Nam</dd></div><div><dt>EDU</dt><dd data-i18n="academyShort">Học viện Kỹ thuật Mật mã</dd></div><div><dt>GPA</dt><dd>3.19 / 4.0</dd></div></dl>
+      <div class="profile-links"><a href="mailto:quynguyen.attt@gmail.com"><span>@</span><span>Email</span></a><a href="https://github.com/q11N9" target="_blank" rel="noreferrer"><span>⌘</span><span>GitHub</span></a><a href="projects.html"><span>◆</span><span data-i18n="selectedWork">Dự án chọn lọc</span></a></div>
+      <div class="availability"><i></i><span data-i18n="availability">Quan tâm các vị trí Security Engineering, SOC và DFIR</span></div>
     </aside>
-
     <main class="content" id="main">
-      <section class="intro" id="about" aria-labelledby="intro-title">
+      <section class="intro home-intro">
         <p class="kicker">security engineering portfolio</p>
-        <h2 id="intro-title" data-i18n="introTitle">Điều tra kỹ. Tự động hóa có kiểm soát.</h2>
+        <h2 data-i18n="introTitle">Điều tra kỹ. Tự động hóa có kiểm soát.</h2>
         <p class="intro-copy" data-i18n="introCopy">Tôi xây dựng năng lực ở giao điểm giữa vận hành SOC, điều tra số, phân tích mã độc và detection engineering. Mục tiêu của tôi là biến dữ liệu rời rạc thành kết luận có thể kiểm chứng và quy trình có thể lặp lại.</p>
-        <div class="intro-meta">
-          <span><b>300+</b><small data-i18n="notesMetric">trang ghi chú kỹ thuật</small></span>
-          <span><b>05/2026</b><small data-i18n="socMetric">bắt đầu kinh nghiệm SOC</small></span>
-          <span><b>01/2027</b><small data-i18n="gradMetric">dự kiến tốt nghiệp</small></span>
-        </div>
+        <div class="page-actions"><a class="primary-link" href="projects.html"><span data-i18n="exploreProjects">Khám phá dự án</span> →</a><a href="about.html"><span data-i18n="readProfile">Đọc hồ sơ</span> →</a></div>
+        <div class="intro-meta"><span><b>300+</b><small data-i18n="notesMetric">trang ghi chú kỹ thuật</small></span><span><b>05/2026</b><small data-i18n="socMetric">bắt đầu kinh nghiệm SOC</small></span><span><b>01/2027</b><small data-i18n="gradMetric">dự kiến tốt nghiệp</small></span></div>
       </section>
-
-      <section class="feed-section" id="projects" aria-labelledby="projects-title">
-        <div class="section-head">
-          <h2 id="projects-title" data-i18n="projectsTitle">Dự án chọn lọc</h2>
-          <span>03 entries</span>
-        </div>
-
-        <article class="feed-entry featured-entry">
-          <p class="entry-meta"><span>2026</span><i>·</i><span data-i18n="ongoing">Đang phát triển</span><i>·</i><span>Python / JavaScript / SOAR</span></p>
-          <h3><a href="https://github.com/q11N9/Agentic-AI-with-Shuffle-and-ELK" target="_blank" rel="noreferrer">Agentic AI for an Open-Source SOC</a></h3>
-          <p data-i18n="agenticText">Hệ thống tích hợp ELK, Shuffle SOAR, Redis, TheHive và các AI agent chuyên trách. Pipeline xử lý alert theo hai tầng: chuẩn hóa, deduplication, correlation và enrichment trước khi chuyển sang incident playbook có analyst phê duyệt.</p>
-          <ul class="entry-tags"><li>ELK</li><li>Shuffle</li><li>Redis</li><li>TheHive</li><li>AI Agents</li></ul>
-          <a class="read-link" href="https://github.com/q11N9/Agentic-AI-with-Shuffle-and-ELK" target="_blank" rel="noreferrer"><span data-i18n="openRepository">Mở repository</span> →</a>
-        </article>
-
-        <article class="feed-entry">
-          <p class="entry-meta"><span>2026</span><i>·</i><span data-i18n="publicLab">Dự án lab công khai</span><i>·</i><span>C# / PKI</span></p>
-          <h3><a href="https://github.com/q11N9/SecuringDocumentUsingCertificates" target="_blank" rel="noreferrer">Securing Documents with Certificates</a></h3>
-          <p data-i18n="certText">Ứng dụng Windows minh họa mã hóa, giải mã, ký số và xác minh tài liệu bằng chứng thư số; hỗ trợ .cer, .crt, .pfx và .p12.</p>
-          <ul class="entry-tags"><li>Cryptography</li><li>Digital Signature</li><li>Certificates</li></ul>
-          <a class="read-link" href="https://github.com/q11N9/SecuringDocumentUsingCertificates" target="_blank" rel="noreferrer"><span data-i18n="openRepository">Mở repository</span> →</a>
-        </article>
-
-        <article class="feed-entry">
-          <p class="entry-meta"><span>2026</span><i>·</i><span data-i18n="learningProject">Dự án học tập</span><i>·</i><span>Solidity / React</span></p>
-          <h3><a href="https://github.com/q11N9/Web3-Bank-App" target="_blank" rel="noreferrer">Web3 Bank App</a></h3>
-          <p data-i18n="web3Text">DApp chạy trên mạng cục bộ, triển khai smart contract nạp/rút test ETH bằng Solidity, Hardhat, Ganache, MetaMask, React và ethers v6.</p>
-          <ul class="entry-tags"><li>Smart Contract</li><li>Hardhat</li><li>ethers.js</li></ul>
-          <a class="read-link" href="https://github.com/q11N9/Web3-Bank-App" target="_blank" rel="noreferrer"><span data-i18n="openRepository">Mở repository</span> →</a>
-        </article>
+      <section class="feed-section">
+        <div class="section-head"><h2 data-i18n="recentWork">Dự án gần đây</h2><a class="section-link" href="projects.html"><span data-i18n="viewAll">Xem tất cả</span> →</a></div>
+        <article class="feed-entry compact-entry"><p class="entry-meta">2026 · Agentic SOC · Python / SOAR</p><h3><a href="projects.html#agentic">Agentic AI for an Open-Source SOC</a></h3><p data-i18n="agenticShort">Pipeline SOC kết hợp ELK, Shuffle, Redis, TheHive và các AI agent có human approval.</p></article>
+        <article class="feed-entry compact-entry"><p class="entry-meta">2026 · C# / PKI</p><h3><a href="projects.html#certificates">Securing Documents with Certificates</a></h3><p data-i18n="certShort">Mã hóa, ký số và xác minh tài liệu bằng chứng thư số trên Windows.</p></article>
       </section>
-
-      <section class="feed-section" id="research" aria-labelledby="research-title">
-        <div class="section-head">
-          <h2 id="research-title" data-i18n="researchTitle">Research log</h2>
-          <span>private notes / selected index</span>
-        </div>
-
-        <div class="note-list">
-          <article class="note-entry">
-            <div class="note-index">01</div>
-            <div><p class="entry-meta">Detection Engineering · SOC</p><h3 data-i18n="note1Title">Từ alert rời rạc tới incident có ngữ cảnh</h3><p data-i18n="note1Text">Alert normalization, Sigma correlation, Redis keys, deduplication, entity extraction và case routing.</p></div>
-          </article>
-          <article class="note-entry">
-            <div class="note-index">02</div>
-            <div><p class="entry-meta">DFIR · Linux</p><h3>BurhanGuild Loader Incident</h3><p data-i18n="note2Text">Live-response artifacts, bằng chứng volatile và phần dữ liệu phục hồi từ deleted storage.</p></div>
-          </article>
-          <article class="note-entry">
-            <div class="note-index">03</div>
-            <div><p class="entry-meta">Memory Forensics · Malware</p><h3>The Apex Affair</h3><p data-i18n="note3Text">Memory/disk forensics, process injection, DPAPI và chuỗi dấu vết ransomware.</p></div>
-          </article>
-          <article class="note-entry">
-            <div class="note-index">04</div>
-            <div><p class="entry-meta">Network Forensics · PCAP</p><h3>Remnant</h3><p data-i18n="note4Text">Lọc traffic quy mô lớn và truy tìm bất thường trong token, cookie, signature và HTTP metadata.</p></div>
-          </article>
-        </div>
-        <p class="privacy-note" data-i18n="privacyNote">Các write-up đầy đủ được giữ riêng để không công khai lời giải hoặc dữ liệu nhạy cảm; có thể trao đổi trong phỏng vấn khi phù hợp.</p>
-      </section>
-
-      <section class="feed-section" id="experience" aria-labelledby="experience-title">
-        <div class="section-head">
-          <h2 id="experience-title" data-i18n="experienceTitle">Kinh nghiệm &amp; đào tạo</h2>
-          <span>timeline</span>
-        </div>
-
-        <div class="timeline">
-          <article>
-            <time>05/2026 — <span data-i18n="present">Hiện tại</span></time>
-            <div><h3>SOC Analyst · VSEC</h3><p data-i18n="vsecText">Giám sát và điều tra cảnh báo; malware analysis, threat hunting và forensic trên Windows/Linux; mô phỏng tấn công web để đánh giá security controls; làm việc với SIEM, SOAR và XDR.</p></div>
-          </article>
-          <article>
-            <time>10/2021 — 01/2027</time>
-            <div><h3 data-i18n="academy">Học viện Kỹ thuật Mật mã</h3><p data-i18n="degree">Kỹ sư An toàn thông tin · GPA 3.19 / 4.0 · Dự kiến tốt nghiệp 01/2027.</p></div>
-          </article>
-          <article>
-            <time data-i18n="ongoingTime">Liên tục</time>
-            <div><h3>CTF · PortSwigger · Hack The Box</h3><p data-i18n="practiceText">Thực hành Reverse Engineering, Digital Forensics, web security labs và các tình huống điều tra Sherlocks.</p></div>
-          </article>
-        </div>
-      </section>
-
-      <section class="feed-section" aria-labelledby="toolkit-title">
-        <div class="section-head">
-          <h2 id="toolkit-title" data-i18n="toolkitTitle">Toolkit</h2>
-          <span>stack</span>
-        </div>
-        <div class="tool-groups">
-          <div><h3 data-i18n="platforms">Nền tảng</h3><p>ELK · Splunk · Microsoft Sentinel · Defender XDR · Wazuh · Cortex XDR</p></div>
-          <div><h3>DFIR / RE</h3><p>Wireshark · Volatility · Sysinternals · Ghidra</p></div>
-          <div><h3 data-i18n="testing">Kiểm thử</h3><p>Burp Suite · PortSwigger Academy · Web/API Testing</p></div>
-          <div><h3 data-i18n="languages">Ngôn ngữ</h3><p>Python · PowerShell · Bash · C/C++ · Assembly</p></div>
-        </div>
-      </section>
-
-      <section class="contact" id="contact" aria-labelledby="contact-title">
-        <p class="kicker">contact</p>
-        <h2 id="contact-title" data-i18n="contactTitle">Trao đổi về Security Engineering.</h2>
-        <p data-i18n="contactText">Nếu bạn đang tìm một Junior Security Engineer có nền tảng SOC, DFIR và thói quen nghiên cứu có hệ thống, hãy liên hệ với tôi.</p>
-        <div class="contact-links">
-          <a href="mailto:quynguyen.attt@gmail.com">quynguyen.attt@gmail.com</a>
-          <a href="https://github.com/q11N9" target="_blank" rel="noreferrer">github.com/q11N9</a>
-        </div>
-      </section>
-
-      <footer>
-        <p>© <span id="year">2026</span> Nguyễn Văn Ngọc Quý</p>
-        <a href="#top"><span data-i18n="backTop">Lên đầu trang</span> ↑</a>
-      </footer>
+      <section class="next-routes"><a href="research.html"><small>01 / RESEARCH</small><strong data-i18n="researchRoute">Khám phá research notes</strong><span>→</span></a><a href="contact.html"><small>02 / CONTACT</small><strong data-i18n="contactRoute">Liên hệ và trao đổi</strong><span>→</span></a></section>
+      <footer><p>© <span class="year">2026</span> Nguyễn Văn Ngọc Quý</p><a href="#main"><span data-i18n="backTop">Lên đầu trang</span> ↑</a></footer>
     </main>
   </div>
-
   <script src="app.js" defer></script>
 </body>
 </html>
